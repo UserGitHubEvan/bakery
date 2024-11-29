@@ -1,0 +1,150 @@
+/* Variables */
+html {
+  /* Primary colors */
+  --primary-color1: #faf4ea;
+  --primary-color2: #31261a;
+  --primary-color3: #819b57;
+
+  /* Secondary colors */
+  --secondary-color1: #465929;
+  --secondary-color2: #a18268;
+  --secondary-color3: #cfcfbc;
+}
+
+/* Base */
+body {
+  color: var(--primary-color2);
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Button */
+.button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color3);
+  background-color: var(--primary-color3);
+  color: var(--primary-color1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--primary-color2);
+  background-color: transparent;
+}
+
+/* Header */
+/* Link */
+.link {
+  color: var(--primary-color1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.link:hover {
+  color: var(--primary-color3);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--primary-color1);
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 192px;
+  text-align: center;
+}
+.hero-title .accent {
+  color: var(--primary-color3);
+}
+
+/* Tradition section */
+.advantages-list {
+  background-color: var(--primary-color3);
+  color: var(--primary-color1);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.tradition-description {
+  /* font-family: Poppins; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.tradition-description.uppercase .accent {
+  text-transform: uppercase;
+}
+.tradition-description .accent {
+  color: var(--primary-color3);
+}
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+}
+.section-title .accent {
+  color: var(--secondary-color1);
+}
+.chefs-article h3 {
+  /* font-family: Poppins; */
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.chefs-article > p {
+  /* font-family: Poppins; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* Format section */
+.format-article {
+  color: var(--primary-color1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.format-article h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+/* Contacts section */
+
+/* Footer */
+.footer-list li a {
+  color: var(--primary-color1);
+  /* font-family: Poppins; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.address-list li a {
+  color: var(--primary-color1);
+  /* font-family: Poppins; */
+  font-weight: 300;
+  line-height: 24px;
+}
+.politic-link {
+  color: var(--primary-color1);
+  /* font-family: Poppins; */
+  font-weight: 300;
+  line-height: 24px;
+}
+.date-protected {
+  color: var(--secondary-color2);
+  /* font-family: Poppins; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
