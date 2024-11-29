@@ -1,3 +1,29 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../fonts/poppins-v21-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v21-latin-900.woff2") format("woff2");
+}
+
 /* Variables */
 html {
   /* Primary colors */
@@ -13,8 +39,14 @@ html {
 
 /* Base */
 body {
+  font-family: "Poppins", sans-serif;
   color: var(--primary-color2);
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+address {
+  font-style: normal;
 }
 a {
   text-decoration: none;
@@ -26,12 +58,10 @@ ul {
 /* Header */
 .link {
   color: var(--primary-color1);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
 }
 .link:hover {
   color: var(--primary-color3);
+  font-weight: 600;
 }
 .button {
   padding: 16px 32px;
@@ -39,9 +69,7 @@ ul {
   border: 2px solid var(--primary-color3);
   background-color: var(--primary-color3);
   color: var(--primary-color1);
-  font-size: 18px;
   font-weight: 600;
-  line-height: 27px;
   cursor: pointer;
 }
 .button:hover {
@@ -54,7 +82,6 @@ ul {
   color: var(--primary-color1);
   font-size: 128px;
   font-weight: 900;
-  line-height: 192px;
   text-align: center;
 }
 .hero-title .accent {
@@ -67,81 +94,54 @@ ul {
   color: var(--primary-color1);
   font-size: 20px;
   font-weight: 300;
-  line-height: 30px;
 }
-.tradition-description {
-  /* font-family: Poppins; */
-  font-size: 18px;
+.tradition-text {
+  font-weight: 600;
+}
+.tradition-text.uppercase .accent {
   font-weight: 400;
-  line-height: 27px;
-}
-.tradition-description.uppercase .accent {
   text-transform: uppercase;
 }
-.tradition-description .accent {
+.tradition-text .accent {
   color: var(--primary-color3);
 }
 .section-title {
   font-size: 64px;
   font-weight: 900;
-  line-height: 84px;
+  line-height: 1.3;
 }
 .section-title .accent {
   color: var(--secondary-color1);
 }
-.chefs-article h3 {
-  /* font-family: Poppins; */
+.chefs-title h3 {
   font-size: 40px;
   font-weight: 600;
-  line-height: 60px;
-}
-.chefs-article > p {
-  /* font-family: Poppins; */
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
 }
 
 /* Format section */
-.format-article {
+.format-title {
   color: var(--primary-color1);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 21px;
-}
-.format-article h3 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 36px;
+}
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 /* Contacts section */
 
 /* Footer */
-.footer-list li a {
+.address-link {
   color: var(--primary-color1);
-  /* font-family: Poppins; */
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-}
-.address-list li a {
-  color: var(--primary-color1);
-  /* font-family: Poppins; */
+  font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.3;
 }
-.politic-link {
-  color: var(--primary-color1);
-  /* font-family: Poppins; */
-  font-weight: 300;
-  line-height: 24px;
+.address-link:hover {
+  color: var(--primary-color3);
 }
-.date-protected {
+.address-copyright {
   color: var(--secondary-color2);
-  /* font-family: Poppins; */
   font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
 }

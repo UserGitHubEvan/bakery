@@ -33,12 +33,12 @@
           <li>Досвідчена управлінська команда</li>
         </ul>
         <h2 class="section-title">Новий формат традицій</h2>
-        <p class="tradition-description uppercase">
+        <p class="tradition-text uppercase">
           <span class="accent">shop bakery</span> — це пекарня, яка взяла все
           найкраще, і зберегла смак традиційної випічки та натуральність
           інгредієнтів.
         </p>
-        <p class="tradition-description">
+        <p class="tradition-text">
           Ми працюємо як найвідоміші мережі—
           <span class="accent">5 хвилин і замовлення готове.</span>
           А ще у наших пекарень стильний дизайн та висока якість обслуговування!
@@ -54,24 +54,24 @@
         </h2>
         <ul>
           <li>
-            <article class="chefs-article">
+            <article>
               <img
-                src="/images/chef-section/bakary-woman-with-cruasant.jpg"
+                src="./images/chef-section/bakary-woman-with-cruasant.jpg"
                 alt="Жінка пекарь з посмішкою тримає тарілку з круасаном"
               />
-              <h3>Настя</h3>
+              <h3 class="chefs-title">Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
               <p>Я випічу для вас найсмачніщі вироби!</p>
             </article>
           </li>
           <li>
-            <article class="chefs-article">
+            <article>
               <img
-                src="/images/chef-section/bakery-man-work-with-dough.jpg"
+                src="./images/chef-section/bakery-man-work-with-dough.jpg"
                 alt="Чолові пекарь розкатує тісто"
               />
-              <h3>Влад</h3>
+              <h3 class="chefs-title">Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>
                 Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов,
@@ -86,45 +86,51 @@
         <h2 class="section-title">Формати</h2>
         <ul>
           <li>
-            <article class="format-article">
+            <article>
               <img
-                src="/images/format-section/Walrus.jpg"
+                src="./images/format-section/Walrus.jpg"
                 alt="Опис формату закладу Walrus"
               />
-              <h3 lang="en">Walrus</h3>
-              <p>Площа: до 120 м2</p>
-              <p>Меню: розширене меню</p>
-              <p>
-                Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                офіціанти-різнороби
-              </p>
-              <p>Посадкові місця: є</p>
+              <h3 class="format-title" lang="en">Walrus</h3>
+              <div class="format-text">
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </div>
             </article>
           </li>
           <li>
-            <article class="format-article">
+            <article>
               <img
-                src="/images/format-section/Horseshoe.jpg"
+                src="./images/format-section/Horseshoe.jpg"
                 alt="Опис формату закладу Horseshoe"
               />
-              <h3 lang="en">Horseshoe</h3>
-              <p>Площа: до 25 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
+              <h3 class="format-title" lang="en">Horseshoe</h3>
+              <div class="format-text">
+                <p>Площа: до 25 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
           <li>
-            <article class="format-article">
+            <article>
               <img
-                src="/images/format-section/Handlebar.jpg"
+                src="./images/format-section/Handlebar.jpg"
                 alt="Опис формату закладу Handlebar"
               />
-              <h3 lang="en">Handlebar</h3>
-              <p>Площа: до 15 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
+              <h3 class="format-title" lang="en">Handlebar</h3>
+              <div class="f">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -153,20 +159,27 @@
         <a href="#">
           <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
-        <ul class="footer-list">
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul>
+          <li><a class="link" href="#">Наші традиції</a></li>
+          <li><a class="link" href="#">Шеф-кухарі</a></li>
+          <li><a class="link" href="#">Формати</a></li>
+          <li><a class="link" href="#">Контакти</a></li>
         </ul>
         <address>
-          <ul class="address-list">
-            <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+          <ul>
             <li>
-              <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+              <a class="address-link" href="tel:+380960000007"
+                >+ 38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="mailto:shopbakery@gmail.com"
+                >shopbakery@gmail.com</a
+              >
             </li>
             <li>
               <a
+                class="address-link"
                 href="https://maps.app.goo.gl/Q6uc5nxz6Zx57TAE9"
                 target="_blank"
               >
@@ -184,10 +197,10 @@
               </a>
             </li>
           </ul>
-          <a href="#" target="_blank" class="politic-link"
+          <a class="address-link" href="#" target="_blank"
             >Політика конфіденційності</a
           >
-          <p class="date-protected">&copy; 2022 Дані захищені</p>
+          <p class="address-copyright">&copy; 2022 Дані захищені</p>
         </address>
       </nav>
     </footer>
