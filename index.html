@@ -30,10 +30,12 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">Сучасна</span> пекарня
-          </h1>
+        <div class="hero-bg">
+          <div class="container">
+            <h1 class="hero-title">
+              <span class="accent">Сучасна</span> пекарня
+            </h1>
+          </div>
         </div>
       </section>
       <section class="advantages-section">
@@ -75,37 +77,42 @@
       </section>
       <section class="chefs-section section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title">
+          <h2 class="chefs-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chefs-article">
                 <img
                   class="chef-image"
-                  src="images/chef-section/bakary-woman-with-cruasant.jpg"
-                  alt="Жінка пекарь з посмішкою тримає тарілку з круасаном"
+                  src="images/chef-section/nastya-chef.jpg"
+                  alt="Настя шеф кухар"
                 />
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+                <div class="chef-content">
+                  <h3 class="chef-title">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="chefs-item">
+              <article class="chefs-article">
                 <img
                   class="chef-image"
-                  src="images/chef-section/bakery-man-work-with-dough.jpg"
-                  alt="Чолові пекарь розкатує тісто"
+                  src="images/chef-section/vlad-chef.jpg"
+                  alt="Влад шеф кухар"
                 />
-                <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <div class="chef-content">
+                  <h3 class="chef-title">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -113,7 +120,7 @@
       </section>
       <section class="section" id="format-section">
         <div class="container">
-          <h2 class="formats-title section-title">Формати</h2>
+          <h2 class="formats-title section-title centered">Формати</h2>
           <ul class="formats-list">
             <li class="formats-item walrus">
               <article class="format-card">
@@ -189,9 +196,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <nav>
+        <nav class="footer-nav">
           <a href="#">
             <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
           </a>
@@ -201,7 +208,7 @@
             <li><a class="link" href="#">Формати</a></li>
             <li><a class="link" href="#">Контакти</a></li>
           </ul>
-          <address>
+          <address class="footer-address">
             <ul class="footer-address-list">
               <li>
                 <a class="address-link" href="tel:+380960000007"
@@ -233,10 +240,12 @@
                 </a>
               </li>
             </ul>
-            <a class="address-link" href="#" target="_blank"
-              >Політика конфіденційності</a
-            >
-            <p class="address-copyright">&copy; 2022 Дані захищені</p>
+            <div class="footer-politic">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+            </div>
           </address>
         </nav>
       </div>
