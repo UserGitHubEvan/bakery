@@ -48,7 +48,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-  background-color: var(--primary-color1);
+  /* background-color: var(--primary-color1); */
+  background-color: grey;
 }
 h1,
 h2,
@@ -66,8 +67,9 @@ a {
   text-decoration: none;
 }
 ul {
-  list-style-type: none;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 .visually-hidden {
   position: absolute;
@@ -88,12 +90,32 @@ ul {
 }
 
 /* Header */
+header {
+  padding-top: 32px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .link {
   color: var(--primary-color1);
 }
 .link:hover {
   color: var(--primary-color3);
-  font-weight: 600;
 }
 .button {
   padding: 16px 32px;
@@ -125,31 +147,25 @@ ul {
   color: var(--primary-color3);
 }
 
-.advantages-list {
+/* Advantages section */
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--primary-color3);
+}
+.advantages-list {
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list li {
   color: var(--primary-color1);
   font-size: 20px;
   font-weight: 300;
 }
 
 /* Tradition section */
-.tradition-section {
+.traditions-section {
   padding-top: 96px;
-}
-.tradition-title {
-  margin-bottom: 42px;
-}
-.tradition-text {
-  font-weight: 600;
-}
-.tradition-text.uppercase {
-  margin-bottom: 42px;
-}
-.tradition-text.uppercase .accent {
-  text-transform: uppercase;
-}
-.tradition-text .accent {
-  color: var(--primary-color3);
 }
 .section-title {
   font-size: 64px;
@@ -159,6 +175,36 @@ ul {
 }
 .section-title .accent {
   color: var(--secondary-color1);
+}
+.traditions-title {
+  margin-bottom: 42px;
+  text-align: left;
+}
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-content {
+  max-width: 710px;
+}
+.traditions-text {
+  font-weight: 600;
+}
+.traditions-text.uppercase {
+  margin-bottom: 42px;
+}
+.tradition-texts.uppercase .accent {
+  text-transform: uppercase;
+}
+.traditions-text .accent {
+  color: var(--primary-color3);
+}
+.traditions-text:last-child {
+  max-width: 360px;
+}
+.traditions-image {
+  border-radius: 400px 400px 0 0;
 }
 
 /* Chefs section */
@@ -179,11 +225,36 @@ ul {
 .formats-title {
   margin-bottom: 80px;
 }
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+  border-radius: 16px;
+}
+.formats-item.walrus {
+  background: url(/images/format-section/Walrus.jpg) no-repeat;
+  background-size: cover;
+}
+.formats-item.horseshoe {
+  background: url(/images/format-section/Horseshoe.jpg) no-repeat;
+  background-size: cover;
+}
+.formats-item.handlebar {
+  background: url(/images/format-section/Handlebar.jpg) no-repeat;
+  background-size: cover;
+}
+.format-card {
+  padding: 24px;
+}
 .format-title {
   margin-bottom: 16px;
   color: var(--primary-color1);
   font-size: 24px;
   font-weight: 600;
+  padding-top: 250px;
 }
 .format-text {
   font-size: 14px;
