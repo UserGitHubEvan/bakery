@@ -278,6 +278,27 @@ header {
 .formats-title {
   margin-bottom: 80px;
 }
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color2);
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.carousel-arrow {
+  fill: var(--primary-color2);
+}
+.carousel-button:hover {
+  background-color: var(--primary-color2);
+}
+.carousel-button:hover .carousel-arrow {
+  fill: var(--primary-color1);
+}
 .formats-list {
   display: flex;
   flex-wrap: wrap;
@@ -348,11 +369,8 @@ header {
 }
 .footer-address-list li:nth-child(4),
 .footer-address-list li:nth-child(5) {
-  margin-bottom: 0;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: black;
+  margin: 0 20px 0 0;
 }
 .address-link {
   display: block;
@@ -364,6 +382,15 @@ header {
 }
 .address-link:hover {
   color: var(--primary-color3);
+}
+.address-link svg {
+  fill: var(--primary-color1);
+}
+.address-link svg:hover {
+  fill: var(--primary-color3);
+}
+.address-link:last-child {
+  margin: 0;
 }
 .address-copyright {
   color: var(--secondary-color2);
