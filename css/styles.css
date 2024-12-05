@@ -38,7 +38,9 @@ html {
 }
 
 /* Base */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -245,7 +247,8 @@ header {
 .chefs-list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px 30px;
 }
 .chefs-item {
   flex-basis: calc((100% - 30px) / 2);
@@ -275,6 +278,11 @@ header {
 }
 
 /* Format section */
+.format-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 .formats-title {
   margin-bottom: 80px;
 }
@@ -282,12 +290,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--primary-color2);
   padding: 0;
+  border-radius: 50%;
+  fill: var(--primary-color2);
   background-color: transparent;
+  border: 1px solid var(--primary-color2);
   cursor: pointer;
 }
 .carousel-arrow {
@@ -324,11 +334,28 @@ header {
 }
 
 /* Contact section */
+.contacts-section {
+  padding: 95px 0;
+}
+.contacts-container {
+  display: flex;
+  gap: 20px;
+}
+.contacts-form {
+}
+.contacts-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
 .contacts-title {
   margin-bottom: 16px;
 }
 .contacts-text {
   margin-bottom: 42px;
+}
+.form-link {
+  display: block;
 }
 
 /* Footer */
@@ -340,21 +367,27 @@ header {
   background-position: center;
   background-size: cover;
 }
-.footer-nav {
+.footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  gap: 20px;
 }
-.footer-link li {
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+.nav-link,
+.footer-list,
+.footer-address-list,
+.footer-politic {
+  flex-grow: 1;
+}
+.footer-list li {
   margin-bottom: 16px;
 }
-.footer-link li:last-child {
+.footer-list li:last-child {
   margin-bottom: 0;
-}
-.footer-address {
-  display: flex;
-  justify-content: space-between;
-  gap: 160px;
 }
 .footer-address-list {
   font-size: 16px;
