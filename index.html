@@ -34,9 +34,8 @@
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <section class="hero-section">
-        <div class="hero-bg"></div>
         <div class="container">
           <h1 class="hero-title">
             <span class="accent">Сучасна</span> пекарня
@@ -128,7 +127,7 @@
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
           <div class="format-container">
-            <button type="button" class="carousel-button">
+            <button type="button" class="carousel-button prev">
               <svg width="16" height="16" class="carousel-arrow">
                 <use href="images/icons.svg#icon-arrow"></use>
               </svg>
@@ -183,7 +182,7 @@
                 </article>
               </li>
             </ul>
-            <button type="button" class="carousel-button">
+            <button type="button" class="carousel-button next">
               <svg width="16" height="16" class="carousel-arrow">
                 <use href="images/icons.svg#icon-arrow"></use>
               </svg>
@@ -291,7 +290,7 @@
               <a class="address-link" href="#" target="_blank"
                 >Політика конфіденційності</a
               >
-              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+              <p class="address-copyright">&copy; 2024 Дані захищені</p>
             </div>
           </address>
         </div>
@@ -300,9 +299,11 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" id="modal-btn-close" type="button">
-          Close
-        </button>
+        <button
+          class="modal-btn-close"
+          id="modal-btn-close"
+          type="button"
+        ></button>
         <div class="container-modal">
           <div class="modal-form">
             <h2 class="modal-title section-title">Замовити дзвінок</h2>
