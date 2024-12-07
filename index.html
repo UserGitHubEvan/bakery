@@ -24,18 +24,23 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button
+            class="button modal-btn-open"
+            id="modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="hero-section">
-        <div class="hero-bg">
-          <div class="container">
-            <h1 class="hero-title">
-              <span class="accent">Сучасна</span> пекарня
-            </h1>
-          </div>
+        <div class="hero-bg"></div>
+        <div class="container">
+          <h1 class="hero-title">
+            <span class="accent">Сучасна</span> пекарня
+          </h1>
         </div>
       </section>
       <section class="advantages-section">
@@ -78,7 +83,8 @@
       <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Наші найкращі <span class="accent">шеф-кухарі</span>
+            Наші найкращі <br />
+            <span class="accent">шеф-кухарі</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -193,9 +199,15 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p class="contacts-text">
-                Заповни форму, щоб ми звʼязались з тобою!
+                Заповніть форму, щоб ми звʼязались з Вами!
               </p>
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button
+                class="button modal-btn-open"
+                id="modal-btn-open"
+                type="button"
+              >
+                Замовити дзвінок
+              </button>
               <a class="form-link" href="#" target="_blank"
                 >Натискаючи на кнопку я погоджуюсь
                 <u>з політикою конфіденційності</u></a
@@ -285,5 +297,28 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" id="modal-btn-close" type="button">
+          Close
+        </button>
+        <div class="container-modal">
+          <div class="modal-form">
+            <h2 class="modal-title section-title">Замовити дзвінок</h2>
+            <p class="modal-text">
+              Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+            </p>
+            <button class="button" type="button">Замовити дзвінок</button>
+            <a class="form-link" href="#" target="_blank"
+              >Натискаючи на кнопку я погоджуюсь
+              <u>з політикою конфіденційності</u></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
