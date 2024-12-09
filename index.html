@@ -202,7 +202,7 @@
               <p class="contacts-text">
                 Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
               </p>
-              <form name="modal-form" autocomplete="off" novalidate>
+              <form action="" name="modal-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name">
                     Імʼя
@@ -213,6 +213,8 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Імʼя"
+                    minlength="2"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -225,6 +227,8 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -237,6 +241,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
                 <button class="form-button button" type="submit">
@@ -346,7 +351,7 @@
         <p class="modal-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form action="" name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Імʼя
@@ -357,6 +362,8 @@
               id="user-name"
               name="user-name"
               placeholder="Імʼя"
+              minlength="2"
+              required
             />
           </div>
           <div class="form-field">
@@ -369,6 +376,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
           <div class="form-field">
@@ -381,6 +390,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
