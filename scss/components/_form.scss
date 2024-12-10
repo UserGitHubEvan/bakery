@@ -1,0 +1,47 @@
+.form-field {
+  margin-bottom: 40px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 15px 40px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color2);
+  width: 100%;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color3);
+  outline: none;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--primary-color2);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 25px;
+}
+
+.form-terms {
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--primary-color2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
