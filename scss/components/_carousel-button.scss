@@ -1,21 +1,3 @@
-.button {
-  padding: 16px 32px;
-  border-radius: 8px;
-  border: 2px solid var(--primary-color3);
-  background-color: var(--primary-color3);
-  color: var(--primary-color1);
-  font-weight: 600;
-  cursor: pointer;
-  padding: 16px 32px;
-  transition: color 1s, background-color 1s;
-}
-
-.button:hover {
-  color: var(--primary-color2);
-  background-color: transparent;
-}
-
-// carousel-button
 .carousel-button {
   display: flex;
   justify-content: center;
@@ -47,5 +29,3 @@
 .carousel-button.next {
   transform: rotate(180deg);
 }
-
-// 

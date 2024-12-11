@@ -1,0 +1,27 @@
+.input {
+  
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color2);
+    width: 100%;
+
+    &:focus {
+      border-color: var(--primary-color3);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--primary-color2);
+    }
+  }
+}

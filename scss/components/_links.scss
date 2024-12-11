@@ -1,0 +1,14 @@
+// header
+.link {
+  color: var(--primary-color1);
+  cursor: pointer;
+  transition: 1s color;
+}
+
+.link:hover {
+  color: var(--primary-color3);
+}
+
+/* a[id="tradition-section"]:target ~ #main section.traditions-section {
+transform: translateY(880px);
+} */

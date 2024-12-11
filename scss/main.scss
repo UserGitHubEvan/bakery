@@ -1,40 +1,28 @@
 @import './utils/_fonts';
 @import './utils/_variables';
 @import './_base';
-
-
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.section {
-    padding: 48px 0;
-}
-
-.container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-@import './components/_header';
+@import './utils/_texts';
+@import './utils/_utils';
+@import './utils/_mixins';
 
 @import './components/_buttons';
+@import './components/_carousel-button';
+@import './components/_chef-card';
+@import './components/_form-terms';
+@import './components/_format-card';
+@import './components/_input';
+@import './components/_links';
 
-@import './components/_hero-section';
-@import './components/_advantages-section';
-@import './components/_traditions-section';
-@import './components/_chefs-section';
-@import './components/_format-section';
-@import './components/_contacts-section';
 
-@import './components/_footer';
-
-@import './components/_modal';
-@import './components/_form';
+@import './layouts/_advantages-section';
+@import './layouts/_chefs-section';
+@import './layouts/_contacts-section';
+@import './layouts/_container';
+@import './layouts/_footer';
+@import './layouts/_formats-section';
+@import './layouts/_forms';
+@import './layouts/_header';
+@import './layouts/_hero-section';
+@import './layouts/_modal';
+@import './layouts/_section';
+@import './layouts/_traditions-section';
