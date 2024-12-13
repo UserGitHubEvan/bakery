@@ -1,0 +1,56 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color1);
+  transform: translateX(100%);
+  transition: transform 0.5s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 180px;
+    height: 240px;
+    background-image: url("../images/modal/docor-bread-modal.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__link {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+
+  &__logo {
+    width: 72px;
+    height: 40px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-size: cover;
+  }
+}
+
+.menu {
+  padding: 85px 25px 0;
+
+  &__link {
+    color: var(--primary-color2);
+    font-size: 14px;
+  }
+}
