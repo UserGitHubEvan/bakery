@@ -1,7 +1,11 @@
 .traditions-section {
-  padding-top: 40px;
+  padding-top: 0px;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media only screen and (min-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
     padding-top: 96px;
   }
 
@@ -11,17 +15,17 @@
     align-items: flex-start;
     gap: 0px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media only screen and (min-width: $bp-tablet) {
       gap: 20px;
     }
 
-    @media screen and (min-width: $bp-desktop) {
+    @media only screen and (min-width: $bp-desktop) {
       gap: 40px;
     }
   }
 
   &__content {
-    @media screen and (min-width: $bp-tablet) {
+    @media only screen and (min-width: $bp-tablet) {
       max-width: 710px;
     }
   }
@@ -29,7 +33,7 @@
   &__title {
     margin-bottom: 25px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media only screen and (min-width: $bp-tablet) {
       margin-bottom: 42px;
       text-align: left;
     }
@@ -38,12 +42,12 @@
   &__text {
     font-size: 16px;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media only screen and (min-width: $bp-desktop) {
       font-size: 18px;
     }
 
     &--limited {
-      @media screen and (min-width: $bp-tablet) {
+      @media only screen and (min-width: $bp-tablet) {
         max-width: 340px;
       }
     }
@@ -57,8 +61,13 @@
     border-radius: 400px 400px 0 0;
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media only screen and (min-width: $bp-tablet) {
       display: block;
+      // width: 300px;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      // width: 100%;
     }
   }
 }

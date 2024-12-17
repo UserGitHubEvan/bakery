@@ -1,32 +1,68 @@
 .chef-card {
   display: flex;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 15px;
+
+  @media only screen and (min-width: $bp-tablet) {
+    gap: 30px;
+  }
 
   &__photo {
+    width: 140px;
     border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--primary-color1),
+    box-shadow: -10px 10px 0 0 var(--primary-color1),
+      -10px 10px 0 2px var(--secondary-color2);
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 180px;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      width: 240px;
+      box-shadow: -16px 16px 0 0 var(--primary-color1),
         -16px 16px 0 2px var(--secondary-color2);
+    }
   }
 
   &__title {
-    margin-bottom: 16px;
-    font-size: 40px;
+    margin-bottom: 8px;
+    font-size: 24px;
     font-weight: 600;
+
+    @media only screen and (min-width: $bp-tablet) {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
   }
 
-    // display: flex;
-    // flex-direction: column;
-    // margin-left: 30px;
-
-  &__text {  
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
 
     &:nth-child(3),
     &:nth-child(4) {
-      max-width: 320px;
+      @media only screen and (min-width: $bp-tablet) {
+        max-width: 320px;
+      }
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    @media only screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 }
