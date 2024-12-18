@@ -1,0 +1,52 @@
+.contacts-section {
+  &__form {
+    flex-shrink: 0;
+    flex-basis: 50%;
+
+    &.form-field {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    color: var(--secondary-color1);
+    text-align: center;
+    margin-bottom: 18px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      margin-bottom: 42px;
+      text-align: left;
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 25px;
+
+    @media only screen and (min-width: $bp-tablet) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.form-terms {
+  display: none;
+
+  @media only screen and (min-width: $bp-tablet) {
+    display: block;
+  }
+}
