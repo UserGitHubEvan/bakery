@@ -7,107 +7,142 @@
   background-size: cover;
   position: relative;
   z-index: 0;
-}
+  overflow: hidden;
 
-.footer::before,
-.footer::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
 
-.footer::before {
-  left: 0;
-  width: 180px;
-  height: 120px;
-  background-image: url("../images/footer/decore-bread-small.png");
-}
+  &::before {
+    top: 50px;
+    left: 0;
+    width: 92px;
+    height: 195px;
+    background-image: url("../images/footer/footer-decore-bread-small1.png");
 
-.footer::after {
-  right: 0;
-  width: 380px;
-  height: 190px;
-  background-image: url("../images/footer/decore-bread-large.png");
-}
+    @media only screen and (min-width: $bp-tablet) {
+      top: 110px;
+      left: 0;
+      width: 180px;
+      height: 206px;
+      background-image: url("../images/footer/footer-decore-bread-large1.png");
+    }
+  }
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
+  &::after {
+    bottom: -27px;
+    right: -10px;
+    width: 110px;
+    height: 120px;
+    background-image: url("../images/footer/footer-decore-bread-small2.png");
 
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
+    @media only screen and (min-width: $bp-tablet) {
+      right: -65px;
+      width: 380px;
+      height: 190px;
+      background-image: url("../images/footer/footer-decore-bread-large2.png");
+    }
+  }
 
-.nav-link,
-.footer-list,
-.footer-address-list,
-.footer-politic {
-  flex-grow: 1;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
 
-.footer-list li {
-  margin-bottom: 16px;
-}
+    @media only screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
 
-.footer-list li:last-child {
-  margin-bottom: 0;
-}
+  &__nav,
+  &__address {
+    display: block;
 
-.footer-address-list {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.3;
-}
+    @media only screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
 
-.footer-address-list li {
-  margin-bottom: 16px;
-}
+  .nav-link {
+    a {
+      display: inline-block;
+    }
+  }
 
-.footer-address-list li:nth-child(3) {
-  max-width: 170px;
-}
+  .nav-link,
+  &__list,
+  &__address-list,
+  &__politic {
+    flex-grow: 1;
+  }
 
-.footer-address-list li:nth-child(4),
-.footer-address-list li:nth-child(5) {
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
+  &__list {
+    li {
+      margin-bottom: 16px;
+    }
 
-.address-link {
-  display: inline-block;
-  margin-bottom: 16px;
-  color: var(--primary-color1);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.3;
-  transition: color 1s;
-}
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
 
-.address-link:hover {
-  color: var(--primary-color3);
-}
+  &__address-list {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
 
-.address-link svg {
-  fill: var(--primary-color1);
-  transition: fill 1s;
-}
+  &__address-list {
+    li {
+      margin-bottom: 16px;
+    }
 
-.address-link svg:hover {
-  fill: var(--primary-color3);
-}
+    li:nth-child(4),
+    li:nth-child(5) {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
 
-.address-link:last-child {
-  margin: 0;
-}
+  &__address-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--primary-color1);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    transition: color 1s;
 
-.address-copyright {
-  color: var(--secondary-color2);
-  font-size: 14px;
-  font-weight: 400;
+    &:hover {
+      color: var(--primary-color3);
+    }
+
+    & svg {
+      fill: var(--primary-color1);
+      transition: fill 1s;
+
+      &:hover {
+        fill: var(--primary-color3);
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .address-copyright {
+    color: var(--secondary-color2);
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
